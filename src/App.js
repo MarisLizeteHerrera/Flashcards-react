@@ -1,26 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import FLAcards from "./FLAcards";
+import FLAcardForm from "./FLAcardForm";
+import { Container, Header, Grid, Card, Button, Icon, Segment } from "semantic-ui-react";
 
 class App extends Component {
+  state = {
+    flacards: [
+      { id: 1, question: "fakequestion", answer: "fakeanswer" },
+      { id: 2, question: "fakequestion", answer: "fakeanswer" },
+      { id: 3, question: "fakequestion", answer: "fakeanswer" },
+    ],
+  };
+
+
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Container style={{ paddingTop: "25px" }}>
+      <Header as="h1">Flashcards</Header>
+      <FLAcards flacards={this.state.flacards} />
+      </Container>
     );
   }
 }
