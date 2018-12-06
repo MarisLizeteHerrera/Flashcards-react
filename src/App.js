@@ -23,6 +23,14 @@ class App extends Component {
     this.setState({ flacards: [flacard, ...this.state.flacards], });
   };
 
+  removeFLAcard = (id) => {
+    const flacards = this.state.flacards.filter( flacard => {
+      if (flacard.id !== id)
+        return flacard
+    });
+    this.setState({ flacards: [...flacards], });
+  };
+
   render() {
     return (
       <Container style={{ paddingTop: "25px" }}>
@@ -30,7 +38,7 @@ class App extends Component {
       < br/>
       <FLAcardForm add={this.addFLAcard} />
       < br/>
-      <FLAcards flacards={this.state.flacards} />
+      <FLAcards flacards={this.state.flacards} remove={this.removeFLAcard}/>
       </Container>
     );
   }

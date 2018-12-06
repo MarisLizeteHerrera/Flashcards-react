@@ -1,11 +1,14 @@
 import React from "react";
-import { Card } from "semantic-ui-react";
+import { Card, Button } from "semantic-ui-react";
 
-const FLAcard = ({ question, answer }) => (
+const FLAcard = ({ id, question, answer, remove }) => (
 
   <Card>
     <Card.Content><br/><h1>{question}</h1><br/><br/></Card.Content>
     <Card.Content>{answer}</Card.Content>
+    <Button color="blue" onClick={() => remove(id)}>
+      Delete
+    </Button>
   </Card>
 
 );
