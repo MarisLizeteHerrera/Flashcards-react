@@ -34,7 +34,7 @@ class FLAcardForm extends React.Component {
             value={this.state.answer} 
             onChange={this.handleChange}
           />
-          <Form.Button>Submit</Form.Button>
+          <Button color="blue" >Submit</Button>
         </Form.Group>
       </Form>
     )  

@@ -7,8 +7,8 @@ class App extends Component {
   state = {
     flacards: [
       { id: 1, question: "fakequestion", answer: "fakeanswer" },
-      { id: 2, question: "fakequestion", answer: "fakeanswer" },
-      { id: 3, question: "fakequestion", answer: "fakeanswer" },
+      { id: 2, question: "fakequestion2", answer: "fakeanswer2" },
+      { id: 3, question: "fakequestion3", answer: "fakeanswer3" },
     ],
   };
 
