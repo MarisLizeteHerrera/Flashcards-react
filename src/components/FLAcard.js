@@ -9,6 +9,8 @@ class FLAcard extends React.Component {
       <Card>
         <Card.Content><br/><h1>{this.props.question}</h1><br/><br/></Card.Content>
         <Card.Content>{this.props.answer}</Card.Content>
+        {/* cant get this to work */}
+          {/* <Button icon color="blue" onClick={this.toggleEdit}>edit</Button> */}
         <Button inverted color="red" onClick={() => this.props.remove(this.props.id)}>
           Delete
         </Button>

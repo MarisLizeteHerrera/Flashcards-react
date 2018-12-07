@@ -49,6 +49,16 @@ class Main extends React.Component {
       .substring(1);
   };
 
+
+
+  // addFLAcard = (flacardData) => {
+  //   const { flacards, } = this.state;
+  //   const flacard = { id: this.getId(), ...flacardData, };
+  //   this.setState({ flacards: [flacard, ...flacards] })
+  // } 
+ 
+// cant get either to work
+
   // addFLAcard = (flacardData) => {
   //   let flacard = { id: this.getId(), ...flacardData, };
   //   this.setState({ flacards: [flacard, ...this.state.flacards], });
@@ -67,8 +77,9 @@ class Main extends React.Component {
       <Container style={{ paddingTop: "25px" }}>
       <Header as="h1">Flashcards</Header>
       { this.renderFLAcards() }
-      {/* < br/>
-      <FLAcardForm add={this.addFLAcard} /> */}
+      < br/>
+      {/* cant get this to work */}
+      {/* <FLAcardForm add={this.addFLAcard} /> */}
       < br/>
       {/* <FLAcards flacards={this.state.flacards} remove={this.removeFLAcard}/> */}
       </Container>
